@@ -16,7 +16,7 @@ export default function Movies_Popular() {
                 {infos.map((data)=>{
                     return(
                         <>
-                            <Card title={data.name}img={`https://image.tmdb.org/t/p/original/${data.poster_path}`}/>
+                            <Card title={data.title}img={`https://image.tmdb.org/t/p/original/${data.poster_path}`}/>
                         </>
                     )
                 })}
