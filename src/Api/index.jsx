@@ -26,15 +26,6 @@ async function datasa(){
     }getMoviesPopulares()
 
 }
-
-//console.log(datas)
-// function teste(){
-//     setName(findPost.name)
-//     setPost(findPost.poster_path)
-// }
-// useEffect(()=>{
-//     teste()
-// },[])
 datasa()
 // getGenres()
 // async function getImage() {
