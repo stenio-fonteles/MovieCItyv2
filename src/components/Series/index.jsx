@@ -8,7 +8,7 @@ export default function Series() {
 
     
     setTimeout(()=>{
-        setInfos(datas[2].results)
+        setInfos(datas[3].results)
     },300)
     function handleChange() {        
         if(display == 'display:grid'){
@@ -23,7 +23,7 @@ export default function Series() {
     return(
         <>
             <Space>
-                <Title>Séries</Title>
+                <Title>Assista</Title>
                 <Button onClick={handleChange} > See More </Button>
             </Space>
             <Section display={display}>

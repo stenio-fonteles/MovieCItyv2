@@ -10,7 +10,7 @@ export default function Movies_Popular() {
         return
     }
     setTimeout(()=>{
-        setInfos(datas[3].results)
+        setInfos(datas[2].results)
     },300)
 
     function handleChange() {        
@@ -25,7 +25,7 @@ export default function Movies_Popular() {
     return(
         <>
             <Space>
-                <Title>Popular</Title>
+                <Title>Assista</Title>
                 <Button onClick={handleChange} > See More </Button>
             </Space>
             <Section display={display}>

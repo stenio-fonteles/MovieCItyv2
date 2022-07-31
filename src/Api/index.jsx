@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { useState } from 'react'
 
 export const datas = []
 
@@ -17,7 +16,7 @@ async function datasa(){
         } getGenres()
 
         async function getSeries(){
-            const {data} = await axios.get("https://api.themoviedb.org/3/discover/tv?api_key=758d90bb10802747712fd860965c0320&language=pt-BR&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0")
+            const {data} = await axios.get("https://api.themoviedb.org/3/discover/tv?api_key=758d90bb10802747712fd860965c0320&language=pt-BR&sort_by=popularity.desc&page=2&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0")
             datas.push(data)
         }   getSeries()
 
