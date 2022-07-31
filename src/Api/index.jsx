@@ -11,18 +11,18 @@ async function datasa(){
     var findPost = arrData[numero]
     datas.push(findPost)
     
-    async function getGenres(){
-        const {data} = await  axios.get(`https://api.themoviedb.org/3/movie/${findPost.id}?api_key=758d90bb10802747712fd860965c0320&language=pt-BR`)
-        datas.push(data)
-    } getGenres()
+        async function getGenres(){
+            const {data} = await  axios.get(`https://api.themoviedb.org/3/movie/${findPost.id}?api_key=758d90bb10802747712fd860965c0320&language=pt-BR`)
+            datas.push(data)
+        } getGenres()
 
-    async function getSeries(){
-        const {data} = await axios.get("https://api.themoviedb.org/3/discover/tv?api_key=758d90bb10802747712fd860965c0320&language=pt-BR&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0")
-        datas.push(data)
-    }   getSeries()
+        async function getSeries(){
+            const {data} = await axios.get("https://api.themoviedb.org/3/discover/tv?api_key=758d90bb10802747712fd860965c0320&language=pt-BR&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0")
+            datas.push(data)
+        }   getSeries()
 
     async function getMoviesPopulares(){
-        const {data} = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=758d90bb10802747712fd860965c0320&language=en-US&page=1")
+        const {data} = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=758d90bb10802747712fd860965c0320&language=pt-BR&page=1")
         datas.push(data)
     }getMoviesPopulares()
 

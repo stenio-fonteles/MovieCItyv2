@@ -27,7 +27,7 @@ export default function About() {
                     <div>
                         {genres.map((i)=>{
                         return(
-                        <p key={i.id}>{i.name}</p>
+                            <p key={i.id}>{i.name}</p>
                         )
                         })}
                     </div>
