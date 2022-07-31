@@ -8,7 +8,7 @@ export const Section = styled.div`
     flex-direction:row;
     justify-content: space-between;
     position: fixed;
-   
+ 
     h2{
         margin-left: 2%;
         margin-top: 3%;

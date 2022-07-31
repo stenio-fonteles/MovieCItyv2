@@ -32,7 +32,7 @@ export default function Movies_Popular() {
                 {infos.map((data)=>{
                     return(
                         <div key={data.id}>
-                            <Card  title={data.title}img={`https://image.tmdb.org/t/p/original/${data.poster_path}`}/>
+                            <Card id={data.id} title={data.title}img={`https://image.tmdb.org/t/p/original/${data.poster_path}`}/>
                         </div>
                     )
                 })}

@@ -30,7 +30,7 @@ export default function Series() {
                 {infos.map((data)=>{
                     return(
                         <div key={data.id}>
-                            <Card title={data.name}img={`https://image.tmdb.org/t/p/original/${data.poster_path}`}/>
+                            <Card id={data.id}title={data.name}img={`https://image.tmdb.org/t/p/original/${data.poster_path}`}/>
                         </div>
                     )
                 })}
