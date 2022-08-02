@@ -1,10 +1,8 @@
-import { useParams } from "react-router-dom"
 
+import DetailsMovies from '../../components/detailsMovie/index'
 export default function Details(){
-    const {id} = useParams();
-
-    console.log(id)
+   
     return(
-        <>{id}</>
+        <DetailsMovies/>
     )
 }
