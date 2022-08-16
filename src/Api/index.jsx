@@ -1,6 +1,9 @@
 import axios from 'axios'
 
 export const datas = []
+export const backgroundConfig = []
+export const moviePopular = []
+export const series = []
 
 async function datasa(){
     const key = "api_key=758d90bb10802747712fd860965c0320"
@@ -13,16 +16,17 @@ async function datasa(){
         async function getGenres(){
             const {data} = await  axios.get(`https://api.themoviedb.org/3/movie/${findPost.id}?api_key=758d90bb10802747712fd860965c0320&language=pt-BR`)
             datas.push(data)
+            backgroundConfig.push(data)
         } getGenres()
 
         async function getSeries(){
             const {data} = await axios.get("https://api.themoviedb.org/3/discover/tv?api_key=758d90bb10802747712fd860965c0320&language=pt-BR&sort_by=popularity.desc&page=2&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0")
-            datas.push(data)
+            series.push(data)
         }   getSeries()
 
     async function getMoviesPopulares(){
         const {data} = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=758d90bb10802747712fd860965c0320&language=pt-BR&page=1")
-        datas.push(data)
+        moviePopular.push(data)
     }getMoviesPopulares()
 
 }

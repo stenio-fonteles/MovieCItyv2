@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { datas } from "../../Api"
+import { series } from "../../Api"
 import Card from "../Card"
 import { Section,Title,Space,Button } from "./styled"
 export default function Series() {
@@ -8,7 +8,7 @@ export default function Series() {
 
     
     setTimeout(()=>{
-        setInfos(datas[3].results)
+        setInfos(series[0].results)
     },300)
     function handleChange() {        
         if(display == 'display:grid'){

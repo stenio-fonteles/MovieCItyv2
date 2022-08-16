@@ -10,11 +10,13 @@ export default function DetailsMovies(){
     const[genres,setGenres] = useState([])
     const [grid,setGrid] = useState([])
     const [site,setSite] = useState('')
+
     async function getMovies(){
         const {data} = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=758d90bb10802747712fd860965c0320&append_to_response=videos,images`)
         setDatas(data)
-        console.log(data)
     }
+
+
     setTimeout(()=>{
         setBackground(`https://image.tmdb.org/t/p/original${datas.backdrop_path}`)
         setImage(`https://image.tmdb.org/t/p/original${datas.poster_path}`)

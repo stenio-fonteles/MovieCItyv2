@@ -1,16 +1,16 @@
 import { useState } from "react"
-import { datas } from "../../Api"
+import { moviePopular } from "../../Api"
 import Card from "../Card"
 import { Section,Title,Button,Space } from "./styled"
 
 export default function Movies_Popular() {
     const [display, setDisplay] = useState('display:flex');
     const [infos, setInfos] = useState([])
-    if(!datas){
-        return
-    }
+    // if(!moviePopular){
+    //     return
+    // }
     setTimeout(()=>{
-        setInfos(datas[2].results)
+        setInfos(moviePopular[0].results)
     },300)
 
     function handleChange() {        
