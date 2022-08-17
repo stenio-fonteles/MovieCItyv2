@@ -25,28 +25,30 @@ export default function DetailsMovies(){
         setSite(datas.homepage)
     },300)
 
-    // console.log(genres)
-    
+    console.log(datas)
     useEffect(()=>{getMovies()},[])
     return(
+        
         <Section background={background}> 
         <div>
             <Perfil src={image}/>
             <Genres>
-                {genres.map((genero) =>{
+                {genres ? ( genres.map((genero) =>{
                     return(
                         <Button>{genero.name}</Button>
                     )
-                })}
+                })) : ( <h1>carregando</h1>)}
             </Genres>
         </div>
-            <a href={site}>Visitar site oficial</a>
+            <a href={datas.homepage}>Visitar site oficial</a>
         <Grid>
-            {grid.map((i) =>{
+            {grid ? (grid.map((i) =>{
                 return(
                     <img src={`https://image.tmdb.org/t/p/original${i.file_path}`}/>
                     )
-                })}
+                })) : (
+                    <h3>carregando</h3>
+                )}
         </Grid>
         </Section>
     )

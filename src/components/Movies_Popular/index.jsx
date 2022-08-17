@@ -6,9 +6,6 @@ import { Section,Title,Button,Space } from "./styled"
 export default function Movies_Popular() {
     const [display, setDisplay] = useState('display:flex');
     const [infos, setInfos] = useState([])
-    // if(!moviePopular){
-    //     return
-    // }
     setTimeout(()=>{
         setInfos(moviePopular[0].results)
     },300)

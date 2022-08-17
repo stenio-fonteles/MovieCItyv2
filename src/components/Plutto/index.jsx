@@ -17,7 +17,7 @@ export default function Plutto(){
     return(
         <Section>
             <button onClick={handleChange}>{tv}</button>
-            {/* <Iframe display={display} src="https://pluto.tv/pt/live-tv/pluto-tv-cine-sucessos?utm_source=plutotv&utm_medium=share&utm_campaign=1000201&utm_content=1000735&referrer=copy-link"/> */}
+            <Iframe display={display} src="https://pluto.tv/pt/live-tv/pluto-tv-cine-sucessos?utm_source=plutotv&utm_medium=share&utm_campaign=1000201&utm_content=1000735&referrer=copy-link"/>
         </Section>
     )
 }

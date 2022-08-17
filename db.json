@@ -1,6 +1,6 @@
 {
-    "teste":{
-        "1":1,
-        "2":2
-    }
+  "Login": {
+    "Name": "Fred",
+    "PassWord": "Flintstone"
+  }
 }

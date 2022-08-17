@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Section } from "./styled";
 
 export default function NavBar(){
@@ -5,10 +6,9 @@ export default function NavBar(){
         <Section>
             <h2>MoviesDoc</h2>
             <ul>
-                <p>Home</p>   
-                <p>Movies</p>
-                <p>TV Series</p>
-
+                <Link to={"/"}>Home</Link> 
+                <Link to={'/'}>Movies</Link>
+                <Link to={'/'}>TV Series</Link>
             </ul>
            
         </Section>

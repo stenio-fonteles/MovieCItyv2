@@ -21,8 +21,11 @@ export const Section = styled.div`
         width: 30%;
         margin-top: 3%;
       
-        p{
+        Link{
             cursor: pointer;
+            color: white;
+            text-decoration: none;
+            border-bottom: none;
         }
     }
 `
